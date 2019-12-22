@@ -1,8 +1,242 @@
----
-layout: default
-title: 星空小易blog
----
-<div class="blurb">
-    <h1> 星空小易</h1>
-    <p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-</div><!-- /.blurb -->
+
+<html >
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"  />
+		<title>星空小易</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript"  src="js/nav.js"></script>
+	</head>
+	
+	<body >
+		<div id="father">
+			<div id ="myname" >星空小易 .COM</div><!--导航结束-->			
+			<!--导航开始-->
+			
+			
+		
+		
+
+		<div id= "myurl">
+			<tr  height="50">
+			<td bgcolor="black">
+				<a href="https://www.baidu.com">&emsp;百度</a>
+				<a href="https://www.taobao.com/">&emsp;淘宝</a>
+				<a href="https://www.jd.com/">&emsp;京东</a>
+				<a href="https://www.szlcsc.com/">&emsp;立创商城</a>
+				<a href="https://www.jdbpcb.com/" >   &emsp;捷多邦PCB </a>
+				<a href="https://www.pan58.com/">&emsp;云盘搜索</a>
+				<a href="https://www.gitee.com" >&emsp; gitee  </a>
+				<a href="https://www.w3school.com.cn">&emsp;W3school</a>
+				<a href="https://www.runoob.com/html/html-tutorial.html" target="left">&emsp; html学习网站</a>
+				<a href="https://www.cnblogs.com/weizhibin1996/p/9366008.html" >&emsp;  padding 的用法  </a>
+				<a href="line.html">&emsp;  画线 </a>
+				
+			</td>
+			</tr><!-- 文章标题-->
+		</div>
+		<!--https://blog.csdn.net/qq_32442967/article/details/86646654 资料来源博客-->
+		<!-- 定义一个id为cg -->
+		<!--<span id="cg">2016/12/21 上午12:00:00</span>-->
+
+
+
+
+
+<div id="pDate"></div>
+<div id="show_ip"></div>
+<div id="ping"></div>
+
+
+
+<script type="text/javascript"  src="js/nongli.js"></script>
+<script src="jquery-1-7-2.js"></script>
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script> 
+<script type="text/javascript"  src="js/find_ip.js"></script>
+<script type="text/javascript"  src="js/PC_PHONE.js"></script>
+<script type="text/javascript"  src="js/music.js"></script>
+<script type="text/javascript"  src="js/my.js"></script>
+
+
+<audio id="media" src="" autoplay="autoplay" onended="playMusic(1,0)" ontimeupdate="timeupdate()" ></audio>
+
+<div id="music_father" >
+				<p id="musicTitle"></p>
+				<p id="currTime" >当前：00:00:00</p>
+				<p id="totalTime" >时长：00:00:00</p>
+				
+				<input id="lastMusic" type="button" value="上一首" />
+				<input id="rewind" type="button" value="<<" />
+				<input id="playMusic" type="button" value="暂停" />
+				<input id="fast" type="button" value=">>" />
+				<input id="nextMusic" type="button" value="下一首" />
+				<select id="playState">
+					<option value="0">单曲循环</option>
+					<option value="1" selected>列表循环</option>
+					<option value="2">随机播放</option>
+				</select>
+				<ul id="music_box" ></ul>
+		</div>
+
+
+
+
+</div><!--"father"-->
+
+<div id="footer">-----Copyright 星空小易-----</div>
+
+</body>
+
+
+
+
+
+
+
+<style>
+	
+#myurl
+		{
+text-align:center;
+			background-color:#96b47d;
+			margin-top:60px;
+			margin-left:0px;
+			height: 30px;
+		}
+#myurl a
+{
+	color:#FFF;
+	
+	letter-spacing:2px;
+    font-size:16px;
+
+   color:white;
+
+
+}
+
+
+#music_father
+	{
+
+		float:left;
+		margin-left:20px;
+		margin-top:20px;
+		width:450px;
+		height:200px;
+	}
+	
+	#musicTitle
+	{
+		font-size:20px;
+		margin-left: 20px;
+		color:blue;
+	}
+#music_box{
+border:2px solid grey;
+
+padding:0px;
+height:100px;
+width:300px;
+overflow-y:auto;
+
+}
+
+
+
+	#ping
+	{
+		margin-left:20px;
+		margin-top:20px;
+
+	}
+	#father
+	{
+
+      overflow: hidden;
+
+      height:1000px;
+     
+	}
+#myname
+{
+      font-size:20px;
+	  margin-left: 20px;
+	  margin-top: 20px;
+	  color:blue;
+
+}
+
+	#my_first
+	{
+
+	        background-color:grey;
+    		color:white;
+    		text-align:center;
+    		
+	        
+
+     
+	}
+
+
+	
+	#divtest
+		{
+			margin-top: 100px;
+		}
+
+	#nav 
+		{
+    		line-height:30px;
+    		background-color:#eeeeee;
+    		height:300px;
+    		width:100px;
+    		float:left;
+    		padding:5px; 
+		}
+	#section 
+		{
+    		width:350px;
+    		float:left;
+    		padding:10px; 
+		}
+	
+
+#ok 
+{
+ margin-top: 10px;
+ margin-left:20px;
+
+}
+#footer{
+
+
+			
+    		background-color:grey;
+    		color:white;
+    		
+    		text-align:center;
+    		
+    		margin-bottom: 0px;
+	        margin-top: 1000px;
+		
+			
+			
+			}
+
+#pDate
+{
+
+margin-left:20;
+
+}
+
+
+</style>
+
+
+
+
+</html>
